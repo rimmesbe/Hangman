@@ -1,0 +1,8 @@
+#alphabet-container {
+  display: inline-block;
+}
+
+#hangman-container {
+  display: inline-block;
+  margin-left: 20%;
+}
