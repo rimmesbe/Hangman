@@ -14,6 +14,7 @@ var completeWord = function(str){
 
 $(document).ready(function() {
   var wordArray = ["apple", "banana", "clock", "gasoline", "animal", "dancing"];
+  var guessCounter = 0;
   // grabs random word from wordArray
   $('#word-generator').on('click', function(e){
     var randomIndex = Math.floor(Math.random() * (5 - 0 + 1));
@@ -29,15 +30,28 @@ $(document).ready(function() {
     $('li').on('click', function(f){
       var $target = $(f.target);
       var letter = $target.text();
+      var letterStatus = false;
       $target.hide();
       for (var i = 0; i < secretWord.length; i++){
         if (secretWord.charAt(i) == letter.toLowerCase()){
           blankWord = blankWord.replaceAt((i*2), letter);
+          letterStatus = true;
         }
       }
+      if(letterStatus == false){
+        guessCounter += 1;
+        $('img').attr('src', ("img/hangman_"+ guessCounter.toString() +".png"));
+      }
+
+      if(guessCounter == 6){
+        $('#hangman-container').append("<h1>GAME OVER!</h1>");
+        $('#hangman-container').append("<a href='javascript:history.go(0)'>play again?</a>");
+      }
+
       $('#secret-word').text(blankWord);
       if(completeWord(blankWord)){
-        $('#hangman-container').append("<h1>Winner!</h1>");
+        $('#hangman-container').append("<h1>WINNER!</h1>");
+        $('#hangman-container').append("<a href='javascript:history.go(0)'>play again?</a>");
       }
     });
   });
