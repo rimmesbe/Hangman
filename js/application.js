@@ -1,3 +1,4 @@
+// function for replacing a specific char in a string
 String.prototype.replaceAt = function(index, character) {
     return this.substr(0, index) + character + this.substr(index+character.length);
 }
@@ -13,7 +14,7 @@ var completeWord = function(str){
 
 $(document).ready(function() {
   var wordArray = ["apple", "banana", "clock", "gasoline", "animal", "dancing"];
-
+  // grabs random word from wordArray
   $('#word-generator').on('click', function(e){
     var randomIndex = Math.floor(Math.random() * (5 - 0 + 1));
     var secretWord = wordArray[randomIndex];
@@ -36,7 +37,7 @@ $(document).ready(function() {
       }
       $('#secret-word').text(blankWord);
       if(completeWord(blankWord)){
-        console.log("Winner");
+        $('#hangman-container').append("<h1>Winner!</h1>");
       }
     });
   });
