@@ -5,9 +5,9 @@
 <p>A) The agent is a piece of software that runs on your host. It collects events and metrics, then sends them to Datadog where the data can be put to use.</p>
 
 <h5>LEVEL 2:</h5>
-  <p>1) While running a load test (see References) for a few minutes, visualize page views per second. Send us the link to this graph!</p>
+  <p> 1) While running a load test (see References) for a few minutes, visualize page views per second. Send us the link to this graph! </p>
   <img src="img/App_Page_Views.png" alt="Single Page Views">
-  <iframe src="https://app.datadoghq.com/graph/embed?token=61f3b8f14f3c99b7c46c99309bef9d77a05b70371eb57288bbf0ff7a0fc6e637&height=300&width=600&legend=true" width="600" height="300" frameborder="0"></iframe>
+  <!-- <iframe src="https://app.datadoghq.com/graph/embed?token=61f3b8f14f3c99b7c46c99309bef9d77a05b70371eb57288bbf0ff7a0fc6e637&height=300&width=600&legend=true" width="600" height="300" frameborder="0"></iframe> -->
 
 <p>2) Create a histogram to see the latency; also give us the link to the graph.</p>
   <img src="img/Ruby_App_Latency.png" alt="App Latency">
