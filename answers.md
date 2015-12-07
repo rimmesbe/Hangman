@@ -6,24 +6,24 @@ A) The agent is a piece of software that runs on your host. It collects events a
 
 LEVEL 2:
   1) While running a load test (see References) for a few minutes, visualize page views per second. Send us the link to this graph!
-  <img src="App_Page_Views.png" alt="Single Page Views">
+  <img src="img/App_Page_Views.png" alt="Single Page Views">
   <iframe src="https://app.datadoghq.com/graph/embed?token=61f3b8f14f3c99b7c46c99309bef9d77a05b70371eb57288bbf0ff7a0fc6e637&height=300&width=600&legend=true" width="600" height="300" frameborder="0"></iframe>
 
 2) Create a histogram to see the latency; also give us the link to the graph.
-  <img src="Ruby_App_Latency.png" alt="App Latency">
+  <img src="img/Ruby_App_Latency.png" alt="App Latency">
   <iframe src="https://app.datadoghq.com/graph/embed?token=a13976f6cf615c0951ff777992e08f7dd8c99e9a5bce18cd1e6c4f55375892b9&height=300&width=600&legend=true" width="600" height="300" frameborder="0"></iframe>
 
 LEVEL 3:
 1) tag your metrics per page
     visualize the latency by page on a graph (using stacked areas, with one color per page)
-<img src="Page_Latency.png" alt="Latency by Page">
+<img src="img/Page_Latency.png" alt="Latency by Page">
 <iframe src="https://app.datadoghq.com/graph/embed?token=c0b10d6de27c22139813bf7a36288a07de30186b8943406afd6c4c3a1a1dd157&height=300&width=600&legend=true" width="600" height="300" frameborder="0"></iframe>
 
 LEVEL 4:
   1)  count the overall number of page views using dogstatsd counters.
       count the number of page views, split by page (hint: use tags)
       visualize the results on a graph
-  <img src="PageView_Overall.png" alt="Overall Page Views">
+  <img src="img/PageView_Overall.png" alt="Overall Page Views">
   <iframe src="https://app.datadoghq.com/graph/embed?token=9352a988ff7d6cd52faf2b689ecde2b3f42bfb601958a244eb4bf397a4b83ee8&height=300&width=600&legend=true" width="600" height="300" frameborder="0"></iframe>
 
   2) Bonus question: do you know why the graphs are very spiky?
@@ -32,12 +32,12 @@ LEVEL 4:
 LEVEL 5:
 1) Write an agent check that samples a random value. Call this new metric: test.support.random
    Visualize this new metric on Datadog, send us the link.
-  <img src="Random_Agent_Check.png" alt="Random Agent Check">
+  <img src="img/Random_Agent_Check.png" alt="Random Agent Check">
   <iframe src="https://app.datadoghq.com/graph/embed?token=672efd6d1100a48f98054c6157666dce728050dad24de232bd62309d4a7b6a1f&height=300&width=600&legend=true" width="600" height="300" frameborder="0"></iframe>
 
 CODE:
 <p>Random Agent Check:</p>
-<img src="imgs/Agent_Check.png" alt="Random Agent Check">
+<img src="img/Agent_Check.png" alt="Random Agent Check">
 
 <p>Ruby Integration Code:</p>
-<img src="imgs/Ruby_integration_code.png" alt="Ruby integration code">
+<img src="img/Ruby_integration_code.png" alt="Ruby integration code">
