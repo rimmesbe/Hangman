@@ -6,15 +6,18 @@ A) The agent is a piece of software that runs on your host. It collects events a
 
 LEVEL 2:
 1) While running a load test (see References) for a few minutes, visualize page views per second. Send us the link to this graph!
-A) <iframe src="https://app.datadoghq.com/graph/embed?token=15b2548b60995ffaa4af8972f690b9d880fe167acdad89941028675943fc2578&height=300&width=600&legend=false" width="600" height="300" frameborder="0"></iframe>
+A)
+<iframe src="https://app.datadoghq.com/graph/embed?token=15b2548b60995ffaa4af8972f690b9d880fe167acdad89941028675943fc2578&height=300&width=600&legend=false" width="600" height="300" frameborder="0"> </iframe>
 
 2) Create a histogram to see the latency; also give us the link to the graph.
-A)<iframe src="https://app.datadoghq.com/graph/embed?token=a13976f6cf615c0951ff777992e08f7dd8c99e9a5bce18cd1e6c4f55375892b9&height=300&width=600&legend=true" width="600" height="300" frameborder="0"></iframe>
+A)
+<iframe src="https://app.datadoghq.com/graph/embed?token=a13976f6cf615c0951ff777992e08f7dd8c99e9a5bce18cd1e6c4f55375892b9&height=300&width=600&legend=true" width="600" height="300" frameborder="0"> </iframe>
 
 LEVEL 3:
 1) tag your metrics per page
     visualize the latency by page on a graph (using stacked areas, with one color per page)
-A)<iframe src="https://app.datadoghq.com/graph/embed?token=c0b10d6de27c22139813bf7a36288a07de30186b8943406afd6c4c3a1a1dd157&height=300&width=600&legend=true" width="600" height="300" frameborder="0"></iframe>
+A)
+<iframe src="https://app.datadoghq.com/graph/embed?token=c0b10d6de27c22139813bf7a36288a07de30186b8943406afd6c4c3a1a1dd157&height=300&width=600&legend=true" width="600" height="300" frameborder="0"> </iframe>
 
 LEVEL 4:
 1) count the number of page views, split by page (hint: use tags)
